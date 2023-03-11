@@ -310,7 +310,7 @@
 @media (min-width: 1200px) {
   .imgven {
     width: 640px;
-    height: 400.22px;
+    height: 280.22px;
   }
   :root {
     --fs-20: 20px;
@@ -322,15 +322,15 @@
     --fs-30: 30px;
     --fs-32: 32px;
     --fs-33: 33px;
-    --fs-35: 32px;
+    --fs-35: 22px;
     --fs-36: 36px;
     --fs-40: 40px;
     --fs-48: 48px;
-    --fs-54: 42px;
+    --fs-54: 30px;
     --fs-59: 59px;
-    --fs-82: 76px;
+    --fs-82: 71px;
     --fs-91: 91px;
-    --lh-68: 50px;
+    --lh-68: 38px;
     --lh-42: 42px;
   }
 }

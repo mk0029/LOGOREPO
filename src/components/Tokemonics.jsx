@@ -119,7 +119,7 @@ function Tokemonics() {
           <h2 className=" ff_space_mono fw-bold fs_91 Toke_text text-center">
             Rarity
           </h2>
-          <article className="d-flex gap-3 white_space justify-content-xxl-between px-4 w-100 my-5 d-none d-xxl-flex">
+          <article className="d-flex gap-3 white_space justify-content-xxl-between px-4 w-100 my-5 d-none d-xl-flex">
             <span className=" d-inline-block  ">
               <a
                 className=" ff_fira_code fw-bold fs_29 text-white text-center rarity_component py-2 d-inline-block"
@@ -166,7 +166,7 @@ function Tokemonics() {
             </span>
           </article>
           <label
-            className="w-100 me-2 mb-4 z_index d-flex align-items-center d-xxl-none my-5"
+            className="w-100 me-2 mb-4 z_index d-flex align-items-center d-xl-none my-5"
             htmlFor="To"
           >
             {" "}

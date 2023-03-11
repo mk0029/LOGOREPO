@@ -166,10 +166,10 @@ function Header() {
           <div className=" container">
             <div className="py-xxl-4 py-xl-3 py-2">
               <div className="row">
-                <div className="col-xxl-7">
-                  <div className="d-flex align-items-center align-items-xxl-start flex-column text-center text-xxl-start">
+                <div className="col-xl-7">
+                  <div className="d-flex align-items-center align-items-xxl-start flex-column text-center text-xl-start">
                     {" "}
-                    <h1 className="Text_gridentH1 ff_source_pro fw_black fs_82 mb-0">
+                    <h1 className="Text_gridentH1 ff_source_pro fw_black fs_82 mb-0 text-start">
                       LOREM IPSUM
                     </h1>
                     <p className=" ff_source_pro fw_semibold fs_54 Text_grident_p lh_68">
@@ -215,8 +215,8 @@ function Header() {
                     </div>
                   </div>
                 </div>
-                <div className="col-xxl-5 ">
-                  <div className="d-flex justify-content-center justify-content-xxl-start">
+                <div className="col-xl-5 ">
+                  <div className="d-flex justify-content-center justify-content-xxl-start align-items-center h-100 align-items-xxl-start ">
                     <div className="boximgven p-0 m-0 imgven my-3 my-xxl-0">
                       <img className="w-100" src={VenHeader} alt="ven" />
                     </div>

@@ -44,24 +44,36 @@ function FAQ() {
           <div className=" container">
             {" "}
             <div className="d-flex flex-column flex-sm-row justify-content-between align-items-center ">
-              <div className="d-flex gap-4 ">
+              <div className="d-flex gap-xxl-5 gap-4  ">
                 <span>
-                  <a className="text_dark_gray" href="#@">
+                  <a
+                    className="text_dark_gray ff_source_pro fs_35 fw-semibold"
+                    href="#@"
+                  >
                     Tokemonics
                   </a>
                 </span>
                 <span>
-                  <a className="text_dark_gray" href="!@">
+                  <a
+                    className="text_dark_gray ff_source_pro fs_35 fw-semibold"
+                    href="!@"
+                  >
                     Rarity
                   </a>
                 </span>
                 <span>
-                  <a className="text_dark_gray" href="#@">
+                  <a
+                    className="text_dark_gray ff_source_pro fs_35 fw-semibold"
+                    href="#@"
+                  >
                     Team
                   </a>
                 </span>
                 <span>
-                  <a className="text_dark_gray" href="#@">
+                  <a
+                    className="text_dark_gray ff_source_pro fs_35 fw-semibold"
+                    href="#@"
+                  >
                     FAQ
                   </a>
                 </span>

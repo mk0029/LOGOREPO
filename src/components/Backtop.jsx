@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import img_top from "../assets/img/Png/image.png";
 function Backtop() {
   const [backtop, setBackTop] = useState(0);
   const top = () => {
@@ -7,10 +7,10 @@ function Backtop() {
   };
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (document.documentElement.scrollTop > 500) {
+      if (document.documentElement.scrollTop > 700) {
         setBackTop(true);
       } else {
-        setBackTop(true);
+        setBackTop(false);
       }
     });
   }, []);
@@ -25,11 +25,15 @@ function Backtop() {
             style={{ zIndex: "99" }}
             className={
               backtop
-                ? "btn d-block position-fixed end-0 bottom-0 mb-2 me-4"
-                : "btn d-none position-fixed end-0 bottom-0 mb-2 me-4"
+                ? "btn d-block position-fixed end-0 bottom-0 mb-2 me-md-4 pe-0 pe-sm-2"
+                : "d-none  "
             }
           >
-            top{" "}
+            <img
+              className="img_go_to_top position-relative"
+              src={img_top}
+              alt=""
+            />
           </button>{" "}
         </div>
       </section>
