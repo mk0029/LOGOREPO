@@ -16,13 +16,13 @@ export const RoadMap = () => {
                   <div
                     className="col-lg-12 d-flex justify-content-center justify-content-lg-start"
                     data-aos="flip-right"
-                    data-aos-easing="ease-out-cubic"
+                    data-aos-easing="ease-out-cubic "
                     data-aos-duration="2000"
                   >
                     <div className="text-start">
                       <h2 className=" ff_ubuntu fw-bold fs_48 Text_gridentH1 line_after_roadmap1 position-relative  mb-xxl-5 mb-xl-4 mb-md-3 mb-2">
                         {" "}
-                        <span className="box_circel position-absolute"></span>
+                        <span className="box_circel position-absolute d-none d-sm-block"></span>
                         {Pastdata.data1}
                       </h2>
                       <h3 className=" ff_source_pro fw_black fs_40 text_white">
@@ -44,7 +44,7 @@ export const RoadMap = () => {
                     <div className="text-lg-end">
                       <h2 className=" ff_ubuntu fw-bold fs_48 Text_gridentH1 mb-xxl-5 mb-xl-4 mb-md-3 mb-2 line_after_roadmap2 position-relative">
                         {" "}
-                        <span className="box_circel2 position-absolute"></span>
+                        <span className="box_circel2 position-absolute d-none d-sm-block"></span>
                         {Pastdata.data4}
                       </h2>
                       <h3 className=" ff_source_pro fw_black fs_40 text_white">

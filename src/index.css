@@ -6,6 +6,8 @@
   list-style-type: none !important;
   text-decoration: none !important;
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
+  -webkit-scroll-behavior: smooth !important;
 }
 .ff_fira_code {
   font-family: "Fira Code", monospace;
@@ -220,7 +222,7 @@
     --fs-30: 19px;
     --fs-32: 32px;
     --fs-33: 33px;
-    --fs-35: 27px;
+    --fs-35: 20px;
     --fs-36: 25px;
     --fs-40: 25px;
     --fs-48: 25px;

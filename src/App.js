@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./components/Header";
@@ -12,12 +9,9 @@ import "./App.css";
 import FAQ from "./components/FAQ";
 
 function App() {
-  useEffect(() => {
-    AOS.init({ once: true });
-  }, []);
   return (
     <div>
-      {/* <Backtop /> */}
+      <Backtop />
       <Loader />
       <Header />
       <Tokemonics />

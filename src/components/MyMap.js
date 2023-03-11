@@ -1,4 +1,4 @@
-import RendomMurgi from "../assets/img/Png/RendomHen.png";
+import Rendomdude from "../assets/img/Png/RendomHen.png";
 const MYCARDS_1 = [
   {
     data1: "NFT",
@@ -19,14 +19,14 @@ const MYCARDS_1 = [
   },
 ];
 export const RandomCards = [
-  { head: " Random", span: "Dude", Image: RendomMurgi, num: "17%" },
-  { head: " Random", span: "Dude", Image: RendomMurgi, num: "17%" },
-  { head: " Random", span: "Dude", Image: RendomMurgi, num: "17%" },
-  { head: " Random", span: "Dude", Image: RendomMurgi, num: "17%" },
-  { head: " Random", span: "Dude", Image: RendomMurgi, num: "17%" },
-  { head: " Random", span: "Dude", Image: RendomMurgi, num: "17%" },
-  { head: " Random", span: "Dude", Image: RendomMurgi, num: "17%" },
-  { head: " Random", span: "Dude", Image: RendomMurgi, num: "17%" },
+  { head: " Random", span: "Dude", Image: Rendomdude, num: "17%" },
+  { head: " Random", span: "Dude", Image: Rendomdude, num: "17%" },
+  { head: " Random", span: "Dude", Image: Rendomdude, num: "17%" },
+  { head: " Random", span: "Dude", Image: Rendomdude, num: "17%" },
+  { head: " Random", span: "Dude", Image: Rendomdude, num: "17%" },
+  { head: " Random", span: "Dude", Image: Rendomdude, num: "17%" },
+  { head: " Random", span: "Dude", Image: Rendomdude, num: "17%" },
+  { head: " Random", span: "Dude", Image: Rendomdude, num: "17%" },
 ];
 export const MYCARD_2 = [
   {

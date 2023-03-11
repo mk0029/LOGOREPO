@@ -1,10 +1,16 @@
 import React from "react";
-import Murgi from "../assets/img/Png/Maskhengrup.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Mask from "../assets/img/Png/Maskhengrup.png";
 import MYCARDS_1 from "./MyMap";
 import { RandomCards } from "./MyMap";
 import { Row } from "react-bootstrap";
 import Select from "react-select";
 function Tokemonics() {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   const style = {
     control: (base) => ({
       ...base,
@@ -32,7 +38,7 @@ function Tokemonics() {
               <div className="row mt-5 row_border mx-xxl-5 mx-xl-4 mx-md-3 mx-1 ">
                 <div className="d-flex flex-column flex-sm-row align-items-center justify-content-between mt-4 ">
                   <span className="w-25 d-flex flex-column align-items-center pb-3">
-                    <img className="murgi_mask_grup" src={Murgi} alt="icon" />
+                    <img className="mask_grup" src={Mask} alt="icon" />
                   </span>
                   <article className="width_65 d-flex flex-column justify-content-end">
                     <p className=" ff_open fw-normal fs_28 text_blue mb-0">
@@ -181,8 +187,8 @@ function Tokemonics() {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="1000"
                 >
-                  <div className="px-sm-4 px-xl-2 pt-4">
-                    <article className="d-flex flex-column align-items-center bgrandomcrd px-4 py-5 py-sm-4 py-xl-5">
+                  <div className="px-sm-4 px-xl-2  pt-4">
+                    <div className="d-flex flex-column align-items-center bgrandomcrd  px-4 py-5 py-sm-4 py-xl-5">
                       <img className=" z_index" src={cards.Image} alt="img" />
 
                       <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
@@ -190,16 +196,16 @@ function Tokemonics() {
                         <span className="d-block">{cards.span}</span>
                       </h2>
 
-                      <span className=" mt-3 mb-5 z_index2 position-relative btn17hover">
-                        <span className=" d-block w-100 h-100 position-absolute btn17_overlay z_index0"></span>
+                      <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
+                        <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
                         <a
-                          className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btn17  py-1 px-4"
+                          className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-4"
                           href="#"
                         >
                           {cards.num}
                         </a>
                       </span>
-                    </article>
+                    </div>
                   </div>
                 </div>
               );
