@@ -4,7 +4,10 @@ import { MYCARD_2 } from "./MyMap";
 export const RoadMap = () => {
   return (
     <>
-      <section className="py-xxl-5 py-xl-4 py-lg-3 py-2 bg_roadmap overflow-hidden">
+      <section
+        className="py-xxl-5 py-xl-4 py-lg-3 py-2 bg_roadmap overflow-hidden"
+        id="Roadmap"
+      >
         <div className=" container">
           <h2 className="text-center ff_space_mono fw-bold fs_91 Faq_text ">
             Roadmap

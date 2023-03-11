@@ -6,7 +6,7 @@ function FAQ() {
   return (
     <>
       {" "}
-      <section className="  bg_roadmap py-xxl-4 py-lg-3 py-2">
+      <section className="  bg_roadmap py-xxl-4 py-lg-3 py-2" id="FAQ">
         <div className=" container">
           <div>
             <h2 className="ff_space_mono fw-bold fs_91 Faq_text text-center">
@@ -47,7 +47,7 @@ function FAQ() {
               <div className="d-flex gap-xxl-5 gap-4  ">
                 <span>
                   <a
-                    className="text_dark_gray ff_source_pro fs_35 fw-semibold"
+                    className="text_dark_gray ff_source_pro fs_35 text_strock_hover fw-semibold"
                     href="#@"
                   >
                     Tokemonics
@@ -55,7 +55,7 @@ function FAQ() {
                 </span>
                 <span>
                   <a
-                    className="text_dark_gray ff_source_pro fs_35 fw-semibold"
+                    className="text_dark_gray ff_source_pro fs_35 text_strock_hover fw-semibold"
                     href="!@"
                   >
                     Rarity
@@ -63,7 +63,7 @@ function FAQ() {
                 </span>
                 <span>
                   <a
-                    className="text_dark_gray ff_source_pro fs_35 fw-semibold"
+                    className="text_dark_gray ff_source_pro fs_35 text_strock_hover fw-semibold"
                     href="#@"
                   >
                     Team
@@ -71,7 +71,7 @@ function FAQ() {
                 </span>
                 <span>
                   <a
-                    className="text_dark_gray ff_source_pro fs_35 fw-semibold"
+                    className="text_dark_gray ff_source_pro fs_35 text_strock_hover fw-semibold"
                     href="#@"
                   >
                     FAQ

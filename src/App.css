@@ -1,9 +1,21 @@
 /* nav-bar */
 .z_index2 {
-  z-index: 3;
+  z-index: 2;
 }
 .z_index0 {
   z-index: 0;
+}
+.z_index {
+  position: static;
+  z-index: 3;
+}
+
+.z_index1 {
+  position: relative !important;
+  z-index: 1 !important;
+}
+.z_index_1 {
+  z-index: -1;
 }
 .menu_formatting {
   display: grid;
@@ -86,11 +98,14 @@ label span {
 .menu {
   display: none;
 }
-ul li a {
-  transition: all 300ms ease-in-out;
-}
 ul li a:hover {
   -webkit-text-stroke: 1px white;
+  color: white !important;
+}
+
+.text_strock_hover:hover {
+  -webkit-text-stroke: 1px white;
+  color: white !important;
 }
 .nav-fix {
   /* min-width: 100vh;/ */
@@ -130,21 +145,7 @@ ul li a:hover {
 .transition_500 {
   transition: all 500ms ease-out !important;
 }
-.z_index {
-  position: relative !important;
-  z-index: 3 !important;
-}
-.z_index0 {
-  position: absolute !important;
-  z-index: 0 !important;
-}
-.z_index1 {
-  position: relative !important;
-  z-index: 1 !important;
-}
-.z_index_1 {
-  z-index: -1;
-}
+
 .white_space {
   white-space: nowrap;
 }
@@ -444,6 +445,11 @@ ul li a:hover {
   pointer-events: none;
 }
 
+.bg_Randomhen {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0px 5.71459px 5.71459px rgba(0, 0, 0, 0.25),
+    0px 5.71459px 34.2875px rgba(0, 0, 0, 0.25);
+}
 /* roadmap */
 .bg_roadmap {
   background: linear-gradient(180deg, #09244e 0%, #04142d 100%) !important;
@@ -672,6 +678,19 @@ ul li a:hover {
   font-weight: 600;
 }
 @media (max-width: 576px) {
+  .logotwitter_discord {
+    width: 20.46px;
+    height: 20.2px;
+    margin-right: 5px;
+  }
+  .btn_Twitter {
+    width: 150px;
+    height: 50px;
+  }
+  .btn_discord {
+    width: 150px;
+    height: 50px;
+  }
   .img_go_to_top {
     width: 40px;
     height: 40px;

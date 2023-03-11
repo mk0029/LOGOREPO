@@ -28,7 +28,10 @@ function Tokemonics() {
   ];
   return (
     <>
-      <section className="toke_bg py-3 py-xxl-5 py-lg-4 py-sm-3">
+      <section
+        className="toke_bg py-3 py-xxl-5 py-lg-4 py-sm-3"
+        id="Tokemonics"
+      >
         <div className="container pb-xxl-5 pb-lg-4 pb-sm-3">
           <h2 className="text-center ff_space_mono fw-bold fs_91 Toke_text">
             Tokemonics
@@ -114,8 +117,11 @@ function Tokemonics() {
           </div>
         </div>
       </section>
-      <section className="rarity_sec_bg py-2 py-lg-5 overflow-hidden py-xxl-4 py-lg-3 py-sm-2">
-        <div className="container px-lg-5">
+      <section
+        className="rarity_sec_bg py-2 py-lg-5 overflow-hidden py-xxl-4 py-lg-3 py-sm-2 "
+        id="Rarity"
+      >
+        <div className="container px-xl-5">
           <h2 className=" ff_space_mono fw-bold fs_91 Toke_text text-center">
             Rarity
           </h2>
@@ -187,9 +193,13 @@ function Tokemonics() {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="1000"
                 >
-                  <div className="px-sm-4 px-xl-2  pt-4">
-                    <div className="d-flex flex-column align-items-center bgrandomcrd  px-4 py-5 py-sm-4 py-xl-5">
-                      <img className=" z_index" src={cards.Image} alt="img" />
+                  <div className="px-sm-3 px-lg-2  pt-4 ">
+                    <div className="d-flex flex-column align-items-center bgrandomcrd bg_Randomhen rounded-2  px-4 py-5 py-sm-4 py-xl-5">
+                      <img
+                        className=" z_index bg_shaddow_Randomhen"
+                        src={cards.Image}
+                        alt="img"
+                      />
 
                       <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
                         {cards.head}
