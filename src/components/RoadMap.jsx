@@ -26,6 +26,9 @@ export const RoadMap = () => {
                       <h2 className=" ff_ubuntu fw-bold fs_48 Text_gridentH1 line_after_roadmap1 position-relative  mb-xxl-5 mb-xl-4 mb-md-3 mb-2">
                         {" "}
                         <span className="box_circel position-absolute d-none d-sm-block"></span>
+                        <span className="num_gradient fw-bold ff_space_mono fs_48">
+                          {Pastdata.span1}
+                        </span>{" "}
                         {Pastdata.data1}
                       </h2>
                       <h3 className=" ff_source_pro fw_black fs_40 text_white">
@@ -49,6 +52,9 @@ export const RoadMap = () => {
                         {" "}
                         <span className="box_circel2 position-absolute d-none d-sm-block"></span>
                         {Pastdata.data4}
+                        <span className="num_gradient fw-bold ff_space_mono fs_48">
+                          {Pastdata.span2}
+                        </span>
                       </h2>
                       <h3 className=" ff_source_pro fw_black fs_40 text_white">
                         {Pastdata.data5}
