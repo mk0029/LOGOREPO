@@ -259,12 +259,10 @@ ul li a:hover {
 .toke_bg {
   background: linear-gradient(180deg, #09244e 0%, #04142d 100%);
 }
-
 .row_border {
   border: 3.5px solid #ffffff;
   border-radius: 14px;
 }
-
 .col_top_bottom_border {
   border-top: 3.5px solid #ffffff;
   border-bottom: 3.5px solid #ffffff;
@@ -275,10 +273,6 @@ ul li a:hover {
 }
 .width_65 {
   width: 65%;
-}
-.mask_grup {
-  width: 87px;
-  height: 87px;
 }
 .box_nft {
   background: linear-gradient(
