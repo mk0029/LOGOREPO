@@ -188,7 +188,7 @@ function Tokemonics() {
             {RandomCards.map((cards) => {
               return (
                 <div
-                  className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-5"
+                  className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3"
                   data-aos="zoom-in"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="1000"
