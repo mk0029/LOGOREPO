@@ -25,7 +25,7 @@ function Backtop() {
             style={{ zIndex: "99" }}
             className={
               backtop
-                ? "btn d-block position-fixed end-0 bottom-0 mb-2 me-md-4 pe-0 pe-sm-2"
+                ? "  d-block position-fixed btn_goto_top_pos bottom-0 mb-2  "
                 : "d-none  "
             }
           >

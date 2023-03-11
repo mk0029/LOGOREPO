@@ -31,6 +31,12 @@ label span {
   margin: 4px 0;
   transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
+.btn_goto_top_pos {
+  right: -5px;
+  bottom: 50px !important;
+  background-color: transparent;
+  border: 0;
+}
 .img_go_to_top {
   width: 50px;
   height: 50px;
