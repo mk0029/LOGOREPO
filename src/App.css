@@ -1223,6 +1223,7 @@ ul li a:hover {
   animation: bgpreloader 0.9s ease-in-out infinite alternate;
   transition: all ease-in-out 400ms;
   padding: 100px;
+  z-index: 123;
 }
 @keyframes bgpreloader {
   0% {

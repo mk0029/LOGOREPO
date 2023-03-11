@@ -18,7 +18,7 @@ function Loader() {
   return (
     <>
       {loder ? (
-        <section className=" position-fixed bg_preloader w-100 min-vh-100 z_index2 d-flex flex-column justify-content-center align-items-center ">
+        <section className=" position-fixed bg_preloader w-100 min-vh-100  d-flex flex-column justify-content-center align-items-center ">
           <div id="preloader">
             <div id="loader"></div>
           </div>
