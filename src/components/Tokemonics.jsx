@@ -7,6 +7,8 @@ import MYCARDS_1 from "./MyMap";
 import { RandomCards } from "./MyMap";
 import { Row } from "react-bootstrap";
 import Select from "react-select";
+import Carousel from "react-bootstrap/Carousel";
+
 function Tokemonics() {
   useEffect(() => {
     AOS.init({ once: true });
@@ -184,57 +186,275 @@ function Tokemonics() {
             />{" "}
           </label>{" "}
           <div className="bottom_border d-block"></div>
-          <Row className=" justify-content-between">
-            {RandomCards.map((cards) => {
-              return (
-                <div
-                  className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3"
-                  data-aos="zoom-in"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="1000"
-                >
-                  <div className="px-sm-3 px-lg-2  pt-4 ">
-                    <div className="d-flex flex-column align-items-center bgrandomcrd bg_Randomhen rounded-2  px-4 py-5 py-sm-4 py-xl-5">
-                      <img
-                        className=" z_index bg_shaddow_Randomhen"
-                        src={cards.Image}
-                        alt="img"
-                      />
+          <Row className=" justify-content-between d-none d-md-flex">
+            {RandomCards.map((cards, i) => {
+              if (i <= 10) {
+                return (
+                  <div
+                    className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3 "
+                    data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                  >
+                    <div className="px-sm-3 px-lg-2  pt-3 h-100  ">
+                      <div className="d-flex flex-column align-items-center boxrandom rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 ">
+                        <img
+                          className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
+                          src={cards.Image}
+                          alt="img"
+                        />
 
-                      <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
-                        {cards.head}
-                        <span className="d-block">{cards.span}</span>
-                      </h2>
+                        <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
+                          {cards.head}
+                          <span className="d-block">{cards.span}</span>
+                        </h2>
 
-                      <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
-                        <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
-                        <a
-                          className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-4"
-                          href="#"
-                        >
-                          {cards.num}
-                        </a>
-                      </span>
+                        <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
+                          <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
+                          <a
+                            className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2"
+                            href="#"
+                          >
+                            {cards.num}
+                          </a>
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
+                );
+              }
             })}
           </Row>
+          <Carousel className="d-md-none">
+            <Carousel.Item>
+              {" "}
+              {RandomCards.map((cards, i) => {
+                if (i <= 0) {
+                  return (
+                    <div
+                      className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3"
+                      data-aos="zoom-in"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="1000"
+                    >
+                      <div className="px-sm-3 px-lg-2  pt-3 shape-outer   ">
+                        <div className="d-flex flex-column align-items-center boxrandom rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 shape-inner">
+                          {/* <img
+                        className="position-absolute w-100 h-100 top-0 start-0"
+                        src={outimg}
+                        alt="outimg"
+                      /> */}
+                          <img
+                            className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
+                            src={cards.Image}
+                            alt="img"
+                          />
+
+                          <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
+                            {cards.head}
+                            <span className="d-block">{cards.span}</span>
+                          </h2>
+
+                          <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
+                            <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
+                            <a
+                              className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2"
+                              href="#"
+                            >
+                              {cards.num}
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+              })}
+            </Carousel.Item>
+            <Carousel.Item>
+              {" "}
+              {RandomCards.map((cards, i) => {
+                if (i <= 0) {
+                  return (
+                    <div
+                      className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3"
+                      data-aos="zoom-in"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="1000"
+                    >
+                      <div className="px-sm-3 px-lg-2  pt-3 shape-outer   ">
+                        <div className="d-flex flex-column align-items-center boxrandom rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 shape-inner">
+                          {/* <img
+                        className="position-absolute w-100 h-100 top-0 start-0"
+                        src={outimg}
+                        alt="outimg"
+                      /> */}
+                          <img
+                            className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
+                            src={cards.Image}
+                            alt="img"
+                          />
+
+                          <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
+                            {cards.head}
+                            <span className="d-block">{cards.span}</span>
+                          </h2>
+
+                          <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
+                            <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
+                            <a
+                              className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2"
+                              href="#"
+                            >
+                              {cards.num}
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+              })}
+            </Carousel.Item>
+            <Carousel.Item>
+              {" "}
+              {RandomCards.map((cards, i) => {
+                if (i <= 0) {
+                  return (
+                    <div
+                      className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3"
+                      data-aos="zoom-in"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="1000"
+                    >
+                      <div className="px-sm-3 px-lg-2  pt-3 shape-outer   ">
+                        <div className="d-flex flex-column align-items-center boxrandom rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 shape-inner">
+                          {/* <img
+                        className="position-absolute w-100 h-100 top-0 start-0"
+                        src={outimg}
+                        alt="outimg"
+                      /> */}
+                          <img
+                            className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
+                            src={cards.Image}
+                            alt="img"
+                          />
+
+                          <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
+                            {cards.head}
+                            <span className="d-block">{cards.span}</span>
+                          </h2>
+
+                          <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
+                            <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
+                            <a
+                              className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2"
+                              href="#"
+                            >
+                              {cards.num}
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+              })}
+            </Carousel.Item>
+            <Carousel.Item>
+              {" "}
+              {RandomCards.map((cards, i) => {
+                if (i <= 0) {
+                  return (
+                    <div
+                      className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3"
+                      data-aos="zoom-in"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="1000"
+                    >
+                      <div className="px-sm-3 px-lg-2  pt-3 shape-outer   ">
+                        <div className="d-flex flex-column align-items-center boxrandom rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 shape-inner">
+                          {/* <img
+                        className="position-absolute w-100 h-100 top-0 start-0"
+                        src={outimg}
+                        alt="outimg"
+                      /> */}
+                          <img
+                            className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
+                            src={cards.Image}
+                            alt="img"
+                          />
+
+                          <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
+                            {cards.head}
+                            <span className="d-block">{cards.span}</span>
+                          </h2>
+
+                          <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
+                            <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
+                            <a
+                              className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2"
+                              href="#"
+                            >
+                              {cards.num}
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+              })}
+            </Carousel.Item>
+            <Carousel.Item>
+              {" "}
+              {RandomCards.map((cards, i) => {
+                if (i <= 0) {
+                  return (
+                    <div
+                      className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3"
+                      data-aos="zoom-in"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="1000"
+                    >
+                      <div className="px-sm-3 px-lg-2  pt-3 shape-outer   ">
+                        <div className="d-flex flex-column align-items-center boxrandom rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 shape-inner">
+                          {/* <img
+                        className="position-absolute w-100 h-100 top-0 start-0"
+                        src={outimg}
+                        alt="outimg"
+                      /> */}
+                          <img
+                            className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
+                            src={cards.Image}
+                            alt="img"
+                          />
+
+                          <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
+                            {cards.head}
+                            <span className="d-block">{cards.span}</span>
+                          </h2>
+
+                          <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
+                            <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
+                            <a
+                              className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2"
+                              href="#"
+                            >
+                              {cards.num}
+                            </a>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+              })}
+            </Carousel.Item>
+          </Carousel>
         </div>
       </section>
     </>
   );
 }
 export default Tokemonics;
-// import React from "react";
-// import { Row } from "react-bootstrap";
-// ;
-// function Rarity() {
-//   return (
-//     <>
-
-//     </>
-//   );
-// }
-// export default Rarity;

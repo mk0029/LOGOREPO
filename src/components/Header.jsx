@@ -146,7 +146,7 @@ function Header() {
             <div className="py-xxl-4 py-xl-3 py-2">
               <div className="row flex-column-reverse flex-xl-row">
                 <div className="col-xl-7">
-                  <div className="d-flex align-items-center align-items-xxl-start flex-column text-center text-xl-start">
+                  <div className="d-flex align-items-center align-items-xl-start flex-column text-center text-xl-start">
                     <h1 className="Text_gridentH1 ff_source_pro fw_black fs_82 mb-0 text-start">
                       LOREM IPSUM
                     </h1>

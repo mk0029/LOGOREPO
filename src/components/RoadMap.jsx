@@ -25,7 +25,7 @@ export const RoadMap = () => {
                     <div className="text-start">
                       <h2 className=" ff_ubuntu fw-bold fs_48 Text_gridentH1 line_after_roadmap1 position-relative  mb-xxl-5 mb-xl-4 mb-md-3 mb-2">
                         {" "}
-                        <span className="box_circel position-absolute d-none d-sm-block"></span>
+                        <span className="box_circel position-absolute d-nne d-sm-block"></span>
                         <span className="num_gradient fw-bold ff_space_mono fs_48">
                           {Pastdata.span1}
                         </span>{" "}
@@ -48,9 +48,9 @@ export const RoadMap = () => {
                     data-aos-duration="2000"
                   >
                     <div className="text-lg-end">
-                      <h2 className=" ff_ubuntu fw-bold fs_48 Text_gridentH1 mb-xxl-5 mb-xl-4 mb-md-3 mb-2 line_after_roadmap2 position-relative">
+                      <h2 className=" ff_ubuntu fw-bold fs_48 Text_gridentH1 mb-xxl-5 mb-xl-4 mb-md-3 mb-2 line_after_roadmap2 position-relative text-lg-end">
                         {" "}
-                        <span className="box_circel2 position-absolute d-none d-sm-block"></span>
+                        <span className="box_circel2 position-absolute d-noe d-sm-block"></span>
                         {Pastdata.data4}
                         <span className="num_gradient fw-bold ff_space_mono fs_48">
                           {Pastdata.span2}
@@ -69,52 +69,6 @@ export const RoadMap = () => {
                 </div>
               );
             })}
-            {/* <div className="mx-lg-5">
-              <div className="col-lg-12 d-flex justify-content-center justify-content-lg-start">
-                <div className="text-start">
-                  <h2 className=" ff_ubuntu fw-bold fs_48 Text_gridentH1 line_after_roadmap1 position-relative  mb-5">
-                    {" "}
-                    <span className="box_circel position-absolute"></span>
-                    01 Lorem Ipsum
-                  </h2>
-                  <h3 className=" ff_source_pro fw_black fs_40 text_white">
-                    Lorem Ipsum dolor sit amet
-                  </h3>
-                  <p className=" ff_source_pro fw_black text_dark_gray">
-                    <span className="d-sm-block">
-                      Lorem Ipsum dolor sit amet, consectetur
-                    </span>
-                    <span className="d-sm-block">
-                      adipiscing elit, sed do eiusmod tempor
-                    </span>
-                    incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-12 d-flex justify-content-center justify-content-lg-end">
-                <div className="text-lg-end">
-                  <h2 className=" ff_ubuntu fw-bold fs_48 Text_gridentH1 mb-4 line_after_roadmap2 position-relative">
-                    {" "}
-                    <span className="box_circel2 position-absolute"></span>
-                    01 Lorem Ipsum
-                  </h2>
-                  <h3 className=" ff_source_pro fw_black fs_40 text_white">
-                    Lorem Ipsum dolor sit amet
-                  </h3>
-                  <p className=" ff_source_pro fw_black text_dark_gray ">
-                    <span className="d-sm-block">
-                      {" "}
-                      Lorem Ipsum dolor sit amet, consectetur
-                    </span>{" "}
-                    <span className="d-sm-block">
-                      {" "}
-                      adipiscing elit, sed do eiusmod tempor
-                    </span>{" "}
-                    incididunt ut labore et dolore magna aliqua.
-                  </p>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>

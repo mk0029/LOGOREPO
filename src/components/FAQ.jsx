@@ -62,11 +62,17 @@ function FAQ() {
                   </a>
                 </span>
                 <span>
+                  {" "}
                   <a
-                    className="text_dark_gray ff_source_pro fs_35 text_strock_hover fw-semibold"
+                    className="text_dark_gray ff_source_pro fs_35 text_strock_hover fw-semibold "
                     href="#@"
                   >
-                    Team
+                    <abbr
+                      title="View Our Team Info  "
+                      className="cursor_pointer"
+                    >
+                      Team
+                    </abbr>
                   </a>
                 </span>
                 <span>

@@ -11,6 +11,7 @@ function Loader() {
   {
     if (loder) {
       document.body.style.overflow = "hidden";
+      document.documentElement.scrollTop = 0;
     } else {
       document.body.style.overflow = "initial";
     }
