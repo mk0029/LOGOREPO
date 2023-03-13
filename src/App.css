@@ -82,18 +82,18 @@ label span {
 
 .menu[type="checkbox"]:checked ~ span:nth-of-type(1) {
   transform-origin: bottom;
-  transform: rotatez(-180deg) translate(10px, 5px);
+  transform: rotatez(-180deg) translate(0px, 0px);
 }
 .menu[type="checkbox"]:checked ~ span:nth-of-type(2) {
   transform-origin: top;
-  transform: rotatez(-180deg) translate(2px, 0px);
+  transform: rotatez(-180deg) translate(0px, -6px);
   margin-top: 7px;
   margin-bottom: 7px;
 }
 .menu[type="checkbox"]:checked ~ span:nth-of-type(3) {
   transform-origin: bottom;
   width: 100%;
-  transform: translate(3px, -16px) rotatez(-180deg);
+  transform: translate(0px, -10px) rotatez(-180deg);
 }
 .menu {
   display: none;
@@ -210,7 +210,10 @@ ul li a:hover {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.border_dashed_tob_bottom {
+  border-top: 3px dashed white;
+  border-bottom: 3px dashed white;
+}
 .logotwitter_discord {
   width: 49.46px;
   height: 40.2px;
@@ -1123,7 +1126,14 @@ ul li a:hover {
     background: linear-gradient(360deg, #ffffff, #fd00f3, #22a2ff, #ffffff);
   }
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 1600px) {
+  .pe-3xl-5 {
+    padding-right: 3rem;
+  }
+  .me-3xl-5 {
+    margin-right: 3rem;
+  }
 }
 .rarity_component:hover {
   color: white !important;

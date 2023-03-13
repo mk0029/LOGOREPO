@@ -100,7 +100,6 @@ function Tokemonics() {
                       <div className="ovrlaynft position-absolute h-100 w-100"></div>
                       <div className="d-flex flex- flex-md-row justify-content-between text-white pe-md-4 align-items-center">
                         <h2 className="ff_source_pro fw_black fs_40 mb-0">
-                          {/* NFT <span className="d-block">Holders</span> */}
                           {pastData.data1}{" "}
                           <span className="d-block">{pastData.data1_2}</span>
                         </h2>
@@ -108,7 +107,7 @@ function Tokemonics() {
                           {pastData.data2}
                         </h3>
                       </div>
-                      <p className=" text_gray_9c ff_source_pro fw-semibold fs_25 pe-xxl-5 me-xxl-5 pe-xl-3 me-xl-3 pe-3">
+                      <p className=" text_gray_9c ff_source_pro fw-semibold fs_25 pe-3xl-5 me-3xl-5 pe-xl-3 me-xl-3 pe-3">
                         {pastData.data3}
                       </p>
                     </div>
@@ -120,7 +119,7 @@ function Tokemonics() {
         </div>
       </section>
       <section
-        className="rarity_sec_bg py-2 py-lg-5 overflow-hidden py-xxl-4 py-lg-3 py-sm-2 "
+        className="rarity_sec_bg py-2 py-lg-5 overflow-hidden py-xxl-4 py-lg-3 py-sm-2 border_dashed_tob_bottom "
         id="Rarity"
       >
         <div className="container px-xl-5">
