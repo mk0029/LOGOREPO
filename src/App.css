@@ -322,7 +322,7 @@ ul li a:hover {
 }
 
 .box_nft:hover {
-  box-shadow: 0px 0px 38px 20px #22a2ff, 0px 5.71459px 34.2875px #2183ca !important;
+  box-shadow: 0px 0px 10px 3px #22a2ff, 0px 5.71459px 34.2875px #2183ca !important;
 }
 .box_nft::after {
   content: "";
@@ -387,7 +387,7 @@ ul li a:hover {
   mask: linear-gradient(red 0 0) content-box, linear-gradient(red 0 0);
   mask-composite: xor;
   padding: 5px;
-  border-radius: 7px;
+  border-radius: 14.1403px;
   pointer-events: none;
 }
 .bottom_border {

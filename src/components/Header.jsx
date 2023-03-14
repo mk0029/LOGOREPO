@@ -160,7 +160,7 @@ function Header() {
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua.
                     </p>
-                    <div className="d-flex gap-2 gap-sm-5 pt-xxl-5 pt-xl-4 pt-md-3 pt-2 flex-md-row ju">
+                    <div className="d-flex gap-2 gap-sm-4 gap-xl-0  gap-xxl-5 pt-xxl-5 pt-xl-4 pt-md-3 pt-2 flex-md-row ju">
                       <span className="btn_Twitter d-flex justify-content-center align-items-center me-md-5">
                         <a
                           href="#?"
