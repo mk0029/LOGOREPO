@@ -308,6 +308,9 @@
   }
 }
 @media (min-width: 1200px) {
+  .translate_middle_y {
+    transform: translateY(0%) !important;
+  }
   .imgven {
     width: 640px;
     height: 280.22px;

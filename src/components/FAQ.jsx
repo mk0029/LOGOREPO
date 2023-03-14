@@ -6,34 +6,36 @@ function FAQ() {
   return (
     <>
       {" "}
-      <section className="  bg_roadmap py-xxl-4 py-lg-3 py-2" id="FAQ">
+      <section
+        className="  bg_roadmap py-xxl-4 py-lg-3 py-2 py-xxl-5 py-4  "
+        id="FAQ"
+      >
         <div className=" container">
           <div>
             <h2 className="ff_space_mono fw-bold fs_91 Faq_text text-center">
               FAQ
             </h2>
-            <div>
-              <div className="row justify-content-center flex-column align-items-center ">
-                {Faq_DATA.map((Pastdata) => {
-                  return (
-                    <div
-                      className="col-xl-6   "
-                      data-aos="fade-down-right"
-                      data-aos-easing="ease-out-cubic"
-                      data-aos-duration="1000"
-                    >
-                      <div className="boxFaq my-3 py-2 px-xl-5 px-lg-4 px-2 h-100 min_hight_200">
-                        <h2 className="text-center fw-bold fs_36 pt-3">
-                          {Pastdata.data1}
-                        </h2>
-                        <p className="text-center fs_35 fw-semibold mb-0">
-                          {Pastdata.data2}
-                        </p>
-                      </div>
+
+            <div className="row justify-content-center flex-column align-items-center ">
+              {Faq_DATA.map((Pastdata) => {
+                return (
+                  <div
+                    className="col-xl-6   "
+                    data-aos="fade-down-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1900"
+                  >
+                    <div className="boxFaq my-3 py-2 px-xl-5 px-lg-4 px-2 h-100 min_hight_200">
+                      <h2 className="text-center fw-bold fs_36 pt-3">
+                        {Pastdata.data1}
+                      </h2>
+                      <p className="text-center fs_35 fw-semibold mb-0">
+                        {Pastdata.data2}
+                      </p>
                     </div>
-                  );
-                })}
-              </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

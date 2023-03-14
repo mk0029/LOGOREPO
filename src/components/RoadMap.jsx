@@ -5,14 +5,14 @@ export const RoadMap = () => {
   return (
     <>
       <section
-        className="py-xxl-5 py-xl-4 py-lg-3 py-2 bg_roadmap overflow-hidden"
+        className="py-xxl-5 py-xl-4 py-3  bg_roadmap overflow-hidden"
         id="Roadmap"
       >
         <div className=" container">
           <h2 className="text-center ff_space_mono fw-bold fs_91 Faq_text ">
             Roadmap
           </h2>
-          <div className="mx-lg-5 mt-xxl-5 mt-lg-4 mt-sm-3 pt-xxl-5 pt-lg-4 pt-sm-3">
+          <div className="mx-lg-5 mt-xxl-5 mt-sm-3 pt-xxl-5 ">
             {MYCARD_2.map((Pastdata) => {
               return (
                 <div className="mx-lg-5">

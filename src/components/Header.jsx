@@ -11,7 +11,7 @@ function Header() {
   }
   return (
     <>
-      <section className=" d-flex flex-column overflow-hidden">
+      <section className=" d-flex flex-column overflow-hidden ">
         <nav className="pt-3 nav_bg">
           <div className=" container">
             <div
@@ -141,12 +141,12 @@ function Header() {
             </div>
           </div>
         </nav>
-        <div className=" d-flex flex-column justify-content-center align-items-center py-xxl-5 py-xl-4 py-md-3 py-2 hadderbg">
+        <div className=" d-flex flex-column justify-content-center align-items-center py-xxl-5 py-xl-4 py-md-3 pb-xxl-5  pb-md-4 pb-2 hadderbg">
           <div className=" container">
             <div className="py-xxl-4 py-xl-3 py-2">
               <div className="row flex-column-reverse flex-xl-row">
-                <div className="col-xl-7">
-                  <div className="d-flex align-items-center align-items-xl-start flex-column text-center text-xl-start">
+                <div className="col-xl-7 ">
+                  <div className="d-flex align-items-center align-items-xl-start flex-column text-center text-xl-start  mt-xl-0 mt-md-4 mt-2">
                     <h1 className="Text_gridentH1 ff_source_pro fw_black fs_82 mb-0 text-start">
                       LOREM IPSUM
                     </h1>
@@ -164,7 +164,7 @@ function Header() {
                       <span className="btn_Twitter d-flex justify-content-center align-items-center me-md-5">
                         <a
                           href="#?"
-                          className=" ff_fira_code fw_medium fs_32 text-white "
+                          className=" ff_fira_code fw_medium fs_32 text-white  d-flex d-flex gap-xxl-3 gap-xl-2 gap-md-3 gap-1 align-items-center  "
                         >
                           <img
                             className=" logotwitter_discord"
@@ -177,10 +177,10 @@ function Header() {
                       <span className="btn_discord d-flex justify-content-center align-items-center ">
                         <a
                           href="#?"
-                          className=" ff_fira_code fw_medium fs_32 text-white "
+                          className=" ff_fira_code fw_medium fs_32 text-white d-flex gap-xxl-3 gap-xl-2 gap-md-3 gap-1 align-items-center "
                         >
                           <img
-                            className=" logotwitter_discord"
+                            className=" logotwitter_discord "
                             src={Discordlogo}
                             alt=""
                           />
