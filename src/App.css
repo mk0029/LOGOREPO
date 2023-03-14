@@ -318,6 +318,7 @@ ul li a:hover {
   border-radius: 7px;
   position: relative;
   overflow: hidden;
+  transition: all 300ms ease-in-out;
 }
 
 .box_nft:hover {

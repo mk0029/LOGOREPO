@@ -8,6 +8,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth !important;
   -webkit-scroll-behavior: smooth !important;
+  transition: all 300ms ease-in-out;
 }
 .ff_fira_code {
   font-family: "Fira Code", monospace;
