@@ -20,7 +20,7 @@ function FAQ() {
               {Faq_DATA.map((Pastdata) => {
                 return (
                   <div
-                    className="col-xl-6   "
+                    className="col-xxl-6 col-xl-10   "
                     data-aos="fade-down-right"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="1900"

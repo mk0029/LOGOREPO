@@ -117,18 +117,18 @@ function Tokemonics() {
         </div>
       </section>
       <section
-        className="rarity_sec_bg  overflow-hidden  border_dashed_tob_bottom py-xxl-5 py-xl-4 py-4 "
+        className="rarity_sec_bg  overflow-hidden  border_dashed_tob_bottom py-xxl-5 py-xl-4 py-sm-4 "
         id="Rarity"
       >
         <div className="container px-xl-5">
           <h2 className=" ff_space_mono fw-bold fs_91 Toke_text text-center pt-4 pb-3">
             Rarity
           </h2>
-          <div className="d-flex px-4 w-100 my-5 d-none d-md-flex row justify-content-between ">
+          <div className="d-flex px-4 w-100 my-5 d-none d-md-flex row justify-content-between px-3">
             <span className=" d-inline-block col-xl-2 col-md-4 my-md-3 my-xl-0  ">
               <div>
                 <a
-                  className=" ff_fira_code fw-bold fs_29 text-white text-center rarity_component py-2 d-inline-block"
+                  className=" ff_fira_code fw-bold fs_29 text-white text-center rarity_component py-2  d-inline-block"
                   href="#"
                 >
                   Background
@@ -210,7 +210,7 @@ function Tokemonics() {
                         src={outimg}
                         alt="outimg"
                       />{" "}
-                      <div className="d-flex flex-column align-items-center  rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
+                      <div className="d-flex flex-column align-items-center Hover_random  rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
                         <img
                           className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
                           src={cards.Image}
@@ -243,106 +243,18 @@ function Tokemonics() {
                   if (i <= 0) {
                     return (
                       <div
-                        className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3 "
+                        className="col-lg-3  mt-5 px-0 px-xxl-3 "
                         data-aos="zoom-in"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="1000"
                       >
-                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative ">
+                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative w-100 mt_nagitve">
                           <img
                             className="position-absolute w-100 h-100 top-0 start-0"
                             src={outimg}
                             alt="outimg"
                           />{" "}
-                          <div className="d-flex flex-column align-items-center  rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
-                            <img
-                              className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
-                              src={cards.Image}
-                              alt="img"
-                            />{" "}
-                            <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
-                              {cards.head}
-                              <span className="d-block">{cards.span}</span>
-                            </h2>
-                            <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
-                              <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
-                              <a
-                                className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2"
-                                href="#"
-                              >
-                                {cards.num}
-                              </a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  }
-                })}
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className=" d-flex justify-content-center ">
-                {RandomCards.map((cards, i) => {
-                  if (i <= 0) {
-                    return (
-                      <div
-                        className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3 "
-                        data-aos="zoom-in"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1000"
-                      >
-                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative  ">
-                          <img
-                            className="position-absolute w-100 h-100 top-0 start-0"
-                            src={outimg}
-                            alt="outimg"
-                          />{" "}
-                          <div className="d-flex flex-column align-items-center bg_shaddow_hover  rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
-                            <img
-                              className="  bg_shaddow_Randomhen pt-2 pt-lg-0"
-                              src={cards.Image}
-                              alt="img"
-                            />{" "}
-                            <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
-                              {cards.head}
-                              <span className="d-block">{cards.span}</span>
-                            </h2>
-                            <span className=" mt-3 mb-5 z_index2 position-relative btndudehover ">
-                              <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
-                              <a
-                                className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2  "
-                                href="#"
-                              >
-                                {cards.num}
-                              </a>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  }
-                })}
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className=" d-flex justify-content-center">
-                {RandomCards.map((cards, i) => {
-                  if (i <= 0) {
-                    return (
-                      <div
-                        className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3 "
-                        data-aos="zoom-in"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1000"
-                      >
-                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative ">
-                          <img
-                            className="position-absolute w-100 h-100 top-0 start-0"
-                            src={outimg}
-                            alt="outimg"
-                          />{" "}
-                          <div className="d-flex flex-column align-items-center  rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
+                          <div className="d-flex flex-column align-items-center mx-4 my-sm-4 Hover_random   rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
                             <img
                               className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
                               src={cards.Image}
@@ -375,18 +287,18 @@ function Tokemonics() {
                   if (i <= 0) {
                     return (
                       <div
-                        className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3 "
+                        className="col-lg-3  mt-5 px-0 px-xxl-3 "
                         data-aos="zoom-in"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="1000"
                       >
-                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative ">
+                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative w-100 mt_nagitve">
                           <img
                             className="position-absolute w-100 h-100 top-0 start-0"
                             src={outimg}
                             alt="outimg"
                           />{" "}
-                          <div className="d-flex flex-column align-items-center  rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
+                          <div className="d-flex flex-column align-items-center mx-4 my-sm-4 Hover_random   rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
                             <img
                               className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
                               src={cards.Image}
@@ -419,18 +331,18 @@ function Tokemonics() {
                   if (i <= 0) {
                     return (
                       <div
-                        className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3 "
+                        className="col-lg-3  mt-5 px-0 px-xxl-3 "
                         data-aos="zoom-in"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="1000"
                       >
-                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative ">
+                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative w-100 mt_nagitve">
                           <img
                             className="position-absolute w-100 h-100 top-0 start-0"
                             src={outimg}
                             alt="outimg"
                           />{" "}
-                          <div className="d-flex flex-column align-items-center  rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
+                          <div className="d-flex flex-column align-items-center mx-4 my-sm-4 Hover_random   rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
                             <img
                               className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
                               src={cards.Image}
@@ -463,18 +375,150 @@ function Tokemonics() {
                   if (i <= 0) {
                     return (
                       <div
-                        className="col-lg-3 col-sm-6 mt-5 px-0 px-xxl-3 "
+                        className="col-lg-3  mt-5 px-0 px-xxl-3 "
                         data-aos="zoom-in"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="1000"
                       >
-                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative ">
+                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative w-100 mt_nagitve">
                           <img
                             className="position-absolute w-100 h-100 top-0 start-0"
                             src={outimg}
                             alt="outimg"
                           />{" "}
-                          <div className="d-flex flex-column align-items-center  rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
+                          <div className="d-flex flex-column align-items-center mx-4 my-sm-4 Hover_random   rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
+                            <img
+                              className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
+                              src={cards.Image}
+                              alt="img"
+                            />{" "}
+                            <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
+                              {cards.head}
+                              <span className="d-block">{cards.span}</span>
+                            </h2>
+                            <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
+                              <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
+                              <a
+                                className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2"
+                                href="#"
+                              >
+                                {cards.num}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  }
+                })}
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className=" d-flex justify-content-center">
+                {RandomCards.map((cards, i) => {
+                  if (i <= 0) {
+                    return (
+                      <div
+                        className="col-lg-3  mt-5 px-0 px-xxl-3 "
+                        data-aos="zoom-in"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1000"
+                      >
+                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative w-100 mt_nagitve">
+                          <img
+                            className="position-absolute w-100 h-100 top-0 start-0"
+                            src={outimg}
+                            alt="outimg"
+                          />{" "}
+                          <div className="d-flex flex-column align-items-center mx-4 my-sm-4 Hover_random   rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
+                            <img
+                              className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
+                              src={cards.Image}
+                              alt="img"
+                            />{" "}
+                            <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
+                              {cards.head}
+                              <span className="d-block">{cards.span}</span>
+                            </h2>
+                            <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
+                              <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
+                              <a
+                                className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2"
+                                href="#"
+                              >
+                                {cards.num}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  }
+                })}
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className=" d-flex justify-content-center">
+                {RandomCards.map((cards, i) => {
+                  if (i <= 0) {
+                    return (
+                      <div
+                        className="col-lg-3  mt-5 px-0 px-xxl-3 "
+                        data-aos="zoom-in"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1000"
+                      >
+                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative w-100 mt_nagitve">
+                          <img
+                            className="position-absolute w-100 h-100 top-0 start-0"
+                            src={outimg}
+                            alt="outimg"
+                          />{" "}
+                          <div className="d-flex flex-column align-items-center mx-4 my-sm-4 Hover_random   rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
+                            <img
+                              className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
+                              src={cards.Image}
+                              alt="img"
+                            />{" "}
+                            <h2 className=" ff_ubuntu fw-bold fs_29 text-center text-white mt-3 pt-2">
+                              {cards.head}
+                              <span className="d-block">{cards.span}</span>
+                            </h2>
+                            <span className=" mt-3 mb-5 z_index2 position-relative btndudehover">
+                              <span className=" d-block w-100 h-100 position-absolute btndude_overlay z_index0"></span>
+                              <a
+                                className=" ff_source_pro fw-bolder fs_23 text-center text_black_2d z_index2 btndude  py-1 px-xl-4 px-2"
+                                href="#"
+                              >
+                                {cards.num}
+                              </a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  }
+                })}
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className=" d-flex justify-content-center">
+                {RandomCards.map((cards, i) => {
+                  if (i <= 0) {
+                    return (
+                      <div
+                        className="col-lg-3  mt-5 px-0 px-xxl-3 "
+                        data-aos="zoom-in"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1000"
+                      >
+                        <div className="px-sm-3 px-lg-2  pt-3 h-100 position-relative w-100 mt_nagitve">
+                          <img
+                            className="position-absolute w-100 h-100 top-0 start-0"
+                            src={outimg}
+                            alt="outimg"
+                          />{" "}
+                          <div className="d-flex flex-column align-items-center mx-4 my-sm-4 Hover_random   rounded-2 position-relative  px-4 py-5 py-sm-4 py-xl-5 pb-sm-5 mb-4 ">
                             <img
                               className=" z_index bg_shaddow_Randomhen pt-2 pt-lg-0"
                               src={cards.Image}
